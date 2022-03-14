@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import YearFact from "./components/YearFact/YearFact"
+import YearInputForm from "./components/YearInputForm/YearInputForm"
+import YearContext from './YearContext/YearContext'
+import styles from './App.module.css'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <YearContext>
+      <div className={styles.App}>
+      <h1>Facts of year</h1>
+      <YearInputForm />
+      <YearFact/>
+      </div>
+    </YearContext>
+  )
 }
 
-export default App;
+export default App
