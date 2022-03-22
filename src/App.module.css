@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+h1{
+  color: steelblue;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

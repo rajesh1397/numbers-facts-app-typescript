@@ -17,7 +17,7 @@ const YearInputForm = () => {
 
   return (
       <>
-      <input className={styles.input }type='text' value={year} onChange={changehandler} id='text' placeholder='Enter a year (NOTE : Upto 2022)' />
+      <input className={styles.input } type='text' value={year} onChange={changehandler} id='text' placeholder='Enter a year' data-testid='yearinput' />
       <br/>
       <Button onclick={clickhandler}>Get Fact</Button>
       </>

@@ -8,9 +8,9 @@ const App = () => {
   return (
     <YearContext>
       <div className={styles.App}>
-      <h1>Facts of year</h1>
-      <YearInputForm />
-      <YearFact/>
+        <h1>FACTS OF YEAR</h1>
+        <YearInputForm />
+        <YearFact/>
       </div>
     </YearContext>
   )
