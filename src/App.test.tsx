@@ -32,14 +32,14 @@ describe('On first time loading', () => {
 
   test('fetch data from api and display in div', async() => {
     render(<yearcontext.Provider value={{yearData,getApiData:(enteredYear)=>{}}}>
-      <App/>
-  </yearcontext.Provider>)
+             <App/>
+          </yearcontext.Provider>)
 
     userEvent.type(screen.getByTestId('yearinput'),'1997')
     userEvent.click(screen.getByRole('button'))
 
     const yearfactdiv = await screen.findByTestId('yearfactdiv')
-    
+
     expect(yearfactdiv).toHaveTextContent('a sample mock data for testing purpose')
     expect(yearfactdiv).toBeInTheDocument()
   })
